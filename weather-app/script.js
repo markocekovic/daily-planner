@@ -13,7 +13,7 @@ function getWeather() {
     const cityName = cityInput.value.trim();
     
     // 1. IMPORTANT: Replace the text below with your actual key from OpenWeatherMap
-    const apiKey = 'your_api_key_here43e90f38d94540de92e0bf2eccf49ce2'; 
+    const apiKey = '43e90f38d94540de92e0bf2eccf49ce2'; 
 
     if (cityName === '') {
         alert('Please enter a city name');
