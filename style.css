@@ -1,0 +1,94 @@
+/* 1. Global Styles - The Foundation */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f3; /* Softer, modern background */
+    color: #333;
+}
+
+/* 2. Header - The Welcome Mat */
+header {
+    background: linear-gradient(135deg, #007BFF, #00d4ff); /* Modern gradient */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+/* 3. The Dashboard Grid - Main Layout */
+#planner-hub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* 4. Project Cards - Your "Apps" */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid #007BFF; /* Accent color on top */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lifts the card when hovering */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+/* 5. Buttons - Navigation */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 15px;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 25px; /* Rounder, modern buttons */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s active;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn:active {
+    transform: scale(0.95); /* Slight "click" effect */
+}
+
+/* 6. Animations - Entry Effect */
+#planner-hub {
+    animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
